@@ -17,7 +17,8 @@ class TaskFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => 'Task ' . $this->faker->randomDigit(),
+            'card_id' => $this->faker->randomDigit(),
         ];
     }
 }

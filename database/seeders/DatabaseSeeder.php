@@ -14,8 +14,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Card::factory(10)->create();
         \App\Models\Desk::factory(10)->create();
+        \App\Models\DeskList::factory(10)->create();
+        \App\Models\Card::factory(10)->create();
+        \App\Models\Task::factory(10)->create();
 
         // \App\Models\User::factory(10)->create();
 

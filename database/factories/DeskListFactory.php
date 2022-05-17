@@ -17,8 +17,8 @@ class DeskListFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->word(),
-            'desk_id' => $this->faker->randomDigit(),
+            'name' => 'Список ' .$this->faker->randomNumber(2, false),
+            'desk_id' => $this->faker->numberBetween(1, 10),
         ];
     }
 }

@@ -17,8 +17,8 @@ class CardFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->word(),
-            'desk_list_id' => $this->faker->randomDigit(),
+            'name' => 'Карточка ' .$this->faker->randomNumber(2, false),
+            'desk_list_id' => $this->faker->numberBetween(1, 10),
         ];
     }
 }

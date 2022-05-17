@@ -17,8 +17,7 @@ class DeskFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->word(),
-
+            'name' => 'Доска '. $this->faker->randomNumber(2, false),
         ];
     }
 }
